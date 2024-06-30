@@ -16,44 +16,35 @@
 
 
 body {
+    font-family: 'Satisfy', cursive;
+    background-color: #c2d39d;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #c2d39d;
     flex-direction: column;
+    min-height: 100vh;
+    
 }
 header {
     text-align: center;
-    margin: auto;
-    width: 500px;
+    width: 100%;
+    padding: 20px 0;
     font-family: 'Satisfy', cursive;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
+header h1, header h2, header h3 {
+    margin: 10px 0;
+}
 
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     width: 80%;
     max-width: 1000px;
+    margin-top: 20px;
 }
 
-@keyframes floating {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-}
 
 .coupon {
     background-color: #ddaecc;
@@ -63,9 +54,9 @@ header {
     text-align: center;
     font-size: 1.2em;
     transition: transform 0.2s, background-color 0.2s;
-    animation: floating 3s ease-in-out infinite;
     cursor: pointer;
 }
+
 
 .coupon:hover {
     background-color: #8e6585;
@@ -77,7 +68,6 @@ header {
     color: #777;
     border-color: #aaa;
     cursor: not-allowed;
-    animation: none;
 }
 
 .note {
@@ -93,6 +83,7 @@ header {
     font-size: 1.2em;
     font-family: 'Pangolin', cursive;
 }
+
 .heart {
     font-size: 2em;
     color: red;
@@ -104,11 +95,10 @@ header {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
+    margin-bottom: 20px;       
+    text-align: center; /* Centra el contenido dentro del song-container */
+    margin-top: 20px; /* Espacio superior para separarlo del header (ajustar según necesidad) */
+    }
 
 .song-container h2 {
     margin-bottom: 10px;
