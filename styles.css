@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Oswald & display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Pangolin & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+PE:wght@100..400&display=swap');
 
 
 
@@ -118,4 +119,31 @@ header h1, header h2, header h3 {
 
 .song-links a:hover {
     text-decoration: underline;
+}
+
+.cartita {
+    font-family: "Playwrite PE", cursive;
+    display: inline-block;
+    background: url(https://png.pngtree.com/thumb_back/fw800/background/20231013/pngtree-vintage-parchment-texture-sheet-on-a-white-background-image_13626333.png) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+}
+
+/* Ajustes responsive */
+@media (min-width: 600px) {
+    .cartita {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 900px) {
+    .cartita {
+        max-width: 70%;
+    }
 }
